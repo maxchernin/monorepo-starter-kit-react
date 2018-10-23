@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {NotFound} from 'common'
+import {NotFound} from 'common-ui/dist'
+import {exampleNavigationJson} from 'common-data';
+import {regexBase} from 'common-data';
 
 class App extends Component {
   render() {
+    console.log(exampleNavigationJson);
+    console.log(regexBase);
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            Monorepo is awesome.
+            lets make it happen.
+            notfound 404 component comes from common-ui package.
+            regex and examplemission are coming from from common-data package
           </p>
           <a
             className="App-link"

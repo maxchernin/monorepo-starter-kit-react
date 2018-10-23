@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "common-ui": "1.0.0",
+    "common-data": "1.0.0",
+    "utils": "1.0.0",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "yarn": "^1.10.1"
