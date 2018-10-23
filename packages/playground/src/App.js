@@ -12,20 +12,11 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <p>
-            Monorepo is awesome.
-            lets make it happen.
-            notfound 404 component comes from common-ui package.
+        <p>
+            Monorepo is awesome.<br/>
+            notfound 404 component comes from common-ui package.<br/>
             regex and examplemission are coming from from common-data package
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
         </header>
         <NotFound/>
       </div>

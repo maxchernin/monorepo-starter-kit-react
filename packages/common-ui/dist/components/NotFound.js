@@ -32,7 +32,7 @@ var NotFound = function (_Component) {
     value: function render() {
       return _react2.default.createElement(
         'div',
-        null,
+        { style: { border: '1px solid green', marginTop: '10px' } },
         '404 not found'
       );
     }

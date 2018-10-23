@@ -1,2 +1,2 @@
 const phoneRegex = /^(\+[0-9]{9,12}|[0-9]{9,13})$/
-export {phoneRegex}
+export default {phoneRegex}
