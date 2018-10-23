@@ -9,6 +9,7 @@ class App extends Component {
   render() {
     console.log(exampleNavigationJson);
     console.log(regexBase);
+    // console.log(paths);
     return (
       <div className="App">
         <header className="App-header">
