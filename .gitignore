@@ -6,6 +6,7 @@
 /packages/playground/node_modules
 # testing
 /coverage
+lerna-debug.log
 
 # production
 /build
