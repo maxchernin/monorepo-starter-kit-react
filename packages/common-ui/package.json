@@ -16,7 +16,8 @@
     "webpack-cli": "^3.1.2",
     "autoprefixer": "7.1.6",
     "rc-slider": "^8.6.3",
-    "react-icons": "2.2.7"
+    "react-icons": "2.2.7",
+    "react-circular-progressbar": "^1.0.0"
   },
   "devDependencies": {
     "babel-preset-env": "^1.7.0",

@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {PageSpacing, NotFound, RatingSlider } from 'common-ui/dist'
-import {exampleNavigationJson} from 'common-data';
-import {regexBase} from 'common-data';
+import {PageSpacing, NotFound, RatingSlider, Eta } from 'common-ui/dist'
+import {regexBase, exampleNavigationJson} from 'common-data';
 
 class App extends Component {
   render() {
@@ -16,12 +15,19 @@ class App extends Component {
       editable: "true",
       instruct: "insturctur"
     };
-    let brand = {
-      cfFieldRequiredMessage: "field is required."
+    let branding = {
+      cfFieldRequiredMessage: "field is required.",
+      colors: {
+        mainColor: 'purple'
+      }
     };
     let storemock = {
       fieldsRefs: []
     };
+    let eta = {
+      label: 'On my way to',
+      destinationAddress: "a random street, a random city, israel"
+    }
     // console.log(paths);
     return (
       <div className="App">
@@ -33,9 +39,17 @@ class App extends Component {
           </p>
         </header>
         <NotFound/>
-        <PageSpacing spaces={35}/>
+        <PageSpacing spaces={5}/>
         <div style={{width: '50%'}}>
-        <RatingSlider field={fieldMock} branding={brand} store={storemock}/>
+        <RatingSlider field={fieldMock} branding={branding} store={storemock}/>
+        <div style={{width: '90%', marginTop: '10px', background: 'red' }}>
+        <Eta branding={branding}
+            isFinished={false} 
+            label={eta.label}
+            // cusLocation={cusLocation}
+            destination={eta.destinationAddress}
+            /> 
+        </div>
         </div>
       </div>
     );
