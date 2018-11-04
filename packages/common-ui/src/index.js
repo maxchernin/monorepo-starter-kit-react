@@ -3,9 +3,4 @@ import RatingSlider from './components/RatingSlider'
 import PageSpacing from './components/PageSpacing'
 import Eta from './components/eta'
 
-export {
-    NotFound,
-    RatingSlider,
-    PageSpacing,
-    Eta
-    };
+export { NotFound, RatingSlider, PageSpacing, Eta };
