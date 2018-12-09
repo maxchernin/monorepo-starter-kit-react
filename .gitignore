@@ -4,8 +4,10 @@
 /node_modules
 /packages/common-ui/node_modules
 /packages/playground/node_modules
+/packages/styleguide/node_modules
 # testing
 /coverage
+lerna-debug.log
 
 # production
 /build
